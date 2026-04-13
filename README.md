@@ -19,7 +19,7 @@ The board features rich peripherals such as:
 This makes it ideal for evaluation in applications like HMI, industrial control, home appliances, 2-wheel clusters, medical devices, new energy systems, machine learning, and other creative projects.
 
 <p align="center">
-<img src="./figures/NuMaker-IoT-MA35D05KI1.png" alt="NuMaker-IoT-MA35D05KI1 Board" class="bg-primary" width="50%">
+<img src="./figures/NuMaker-IoT-MA35D05KI1.png" alt="NuMaker-IoT-MA35D05KI1 Board" class="bg-primary" width="25%">
 </p>
 
 ## Supported Compiler
