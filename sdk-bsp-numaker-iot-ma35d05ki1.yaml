@@ -1,0 +1,100 @@
+board:
+  buy_url_cn: https://direct.nuvoton.com/en/numaker-hmi-ma35d1-s1
+  buy_url_global: https://direct.nuvoton.com/en/numaker-hmi-ma35d1-s1
+  debug_interface: SWD
+  debugger: NU-LINK
+  description_en: The NuMaker-IoT-MA35D05KI1 is an evaluation board for Nuvoton NuMicro MA35D0 series microprocessors. It integrates core components to simplify system design, includes,
+                  MA35D05KI67C microprocessor, PMIC power supply solution and One Gigabit Ethernet PHY.
+
+  description_zh: NuMaker-IoT-MA35D05KI1 是一款用于 Nuvoton Technology Corporation NuMicro MA35D0 系列微处理器的评估板。它集成了系统设计所需的核心组件，包括 MA35D05KI67C 微处理器、
+                  电源管理芯片（PMIC）供电方案以及一个千兆以太网 PHY。
+  emulator_machine: ''
+  large_image: documents/images/large.png
+  name: NUMAKER-IOT-MA35D05KI1
+  price_cn: CNY
+  price_global: USD
+  sale_contact_cn: https://www.nuvoton.com
+  sale_contact_global: https://www.nuvoton.com
+  small_image: documents/images/small.png
+  vendor: Nuvoton
+  version: v1.0
+chip:
+  chip_name: MA35D05KI67C
+  clock_source: HXT
+  device_vendor: Nuvoton
+  family_name: NuMicro
+  rx_name: PB12
+  series_name: MA35D1
+  source_freq: '24000000'
+  sub_series_name: MA35D0
+  target_freq: '650000000'
+  tx_name: PB13
+  uart_name: UART0
+docs: []
+example_projects: []
+features:
+- 650MHz CPU frequency
+- 256MB DDR3L
+- PMIC power solution
+- Gigabit Ethernet PHY x1
+- USB2.0 HS Host x1, USB2.0 HS Host/Device x1
+- CAN FD x4
+- SD2.0 x1
+
+features_zh:
+- 650MHz 主频
+- 256MB DDR3L
+- PMIC 电源解决方案
+- 千兆以太网 PHY x1
+- USB2.0 高速主机 x1, 高速主机设备 x1
+- CAN FD x4
+- SD2.0 x1
+
+pkg_type: Board_Support_Packages
+pkg_vendor: Nuvoton
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .settings
+    - .cproject
+    - .config
+    - .project
+    - SConstruct
+    - linking_scripts
+    - rtconfig_preinc.h
+    - Kconfig
+    - applications
+    - makefile.targets
+    - board
+    - rt-thread
+    - ma35-rtp
+    - preload
+    - nuwriter_scripts
+    - README.md
+    - rtconfig.h
+    - SConscript
+    - libraries
+    - packages
+    - rtconfig.py
+    source_path_offset: ''
+    target_path_offset: ''
+  external_files:
+  - package_type: ToolChain_Support_Packages
+    package_name: GNU_Tools_for_ARM_Embedded_Processors
+    package_vendor: 'ARM'
+    package_version: 10.2.1
+    source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders: []
+  - package_type: Debugger_Support_Packages
+    package_name: OpenOCD-Nuvoton
+    package_vendor: 'Nuvoton'
+    package_version: 1.35.0
+    source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders: []    
+  project_description: ''
+  project_name: numaker-iot-ma35d05ki1
+  project_type: rt-thread|@full|@notUsed
+yaml_version: 3
