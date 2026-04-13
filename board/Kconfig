@@ -1,0 +1,41 @@
+menu "Hardware Drivers Config"
+
+    menu "On-chip Peripheral Drivers"
+        source "./libraries/ma35/rtt_port/Kconfig_ma35d0"
+    endmenu
+
+    menu "On-board Peripheral Drivers"
+
+        config BSP_USING_CONSOLE
+            bool "Enable UART0 for RTT Console(uart0)"
+            select BSP_USING_UART
+            select BSP_USING_UART0
+            default y
+
+        config BOARD_USING_STORAGE_SDCARD
+            bool "SDCARD supporting"
+            select BSP_USING_SDH
+            select BSP_USING_SDH1
+            default y
+
+        config BOARD_USING_STORAGE_SPINAND
+            bool "SPI NAND FLASH supporting(over qspi0)"
+            select BSP_USING_QSPI
+            select BSP_USING_QSPI0
+            select NU_PKG_USING_SPINAND
+            default y
+
+        config BOARD_USING_USBHOST
+            bool "USB HOST function"
+            select BSP_USING_USBH
+            default y
+
+    endmenu
+
+    menu "Board extended module drivers"
+
+    endmenu
+
+    source "./libraries/nu_packages/Kconfig"
+
+endmenu

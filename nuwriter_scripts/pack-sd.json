@@ -1,0 +1,19 @@
+{
+  "image": [
+    {
+      "offset": "0x400",
+      "file": "conv/header.bin",
+      "type": 0
+    },
+    {
+      "offset": "0x1000",
+      "file": "ddrimg/MA35D05KI67C.bin",
+      "type": 0
+    },
+    {
+      "offset": "0x4000",
+      "file": "../../rtthread.bin",
+      "type": 0
+    }
+  ]
+}

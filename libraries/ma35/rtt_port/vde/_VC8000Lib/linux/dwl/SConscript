@@ -1,0 +1,17 @@
+﻿# RT-Thread building script for component
+
+Import('RTT_ROOT')
+from building import *
+
+objs = []
+
+if GetDepend('USE_MA35_AARCH32'):
+    cwd     = GetCurrentDir()
+    src = Split("""
+    dwl_linux_sc.c
+    dwl_linux.c
+    """)
+    CPPPATH = [cwd]
+    objs = DefineGroup('vc8000', src, depend = [''], CPPPATH = CPPPATH)
+
+Return('objs')

@@ -1,0 +1,22 @@
+[
+ {
+  "path": "/packages/multimedia/LVGL/LVGL", 
+  "ver": "v8.3.5", 
+  "name": "LVGL"
+ }, 
+ {
+  "path": "/packages/system/ramdisk", 
+  "ver": "latest", 
+  "name": "RAMDISK"
+ }, 
+ {
+  "path": "/packages/system/CherryUSB", 
+  "ver": "latest", 
+  "name": "CHERRYUSB"
+ }, 
+ {
+  "path": "/packages/misc/optparse", 
+  "ver": "latest", 
+  "name": "OPTPARSE"
+ }
+]
