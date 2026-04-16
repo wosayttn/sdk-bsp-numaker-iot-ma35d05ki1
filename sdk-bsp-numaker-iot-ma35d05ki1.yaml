@@ -70,8 +70,6 @@ template_projects:
     - rt-thread
     - ma35-rtp
     - preload
-    - nuwriter_scripts
-    - README.md
     - rtconfig.h
     - SConscript
     - libraries
